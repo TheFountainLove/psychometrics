@@ -1,0 +1,906 @@
+{
+  "scaleStandard": {
+    "intermediate": [
+      {
+        "start": 43.3,
+        "end": 56.7
+      }
+    ],
+    "predisposition": [
+      {
+        "start": 38.5,
+        "end": 43.3
+      },
+      {
+        "start": 56.7,
+        "end": 61.5
+      }
+    ],
+    "typical": [
+      {
+        "start": 0,
+        "end": 38.5
+      },
+      {
+        "start": 61.5,
+        "end": 88
+      }
+    ],
+    "epq": {
+      "normal": [
+        {
+          "start": 40,
+          "end": 60
+        }
+      ],
+      "mild": [
+        {
+          "start": 0,
+          "end": 40
+        },
+        {
+          "start": 60,
+          "end": 88
+        }
+      ],
+      "moderate": [
+        {
+          "start": 0,
+          "end": 30
+        },
+        {
+          "start": 70,
+          "end": 88
+        }
+      ]
+    }
+  },
+  "scaleInfo": {
+    "E": {
+      "positive": [
+        1,
+        5,
+        10,
+        13,
+        14,
+        17,
+        25,
+        33,
+        37,
+        41,
+        49,
+        53,
+        55,
+        61,
+        65,
+        71,
+        80,
+        84
+      ],
+      "negative": [
+        21,
+        29,
+        45
+      ],
+      "content": "表示性格的内外倾向。分数超过,表示典型外向性格,分数在之间为趋向外向,分数在之间为中间型,在之间为内倾,分数低于,为典型内向。"
+    },
+    "N": {
+      "positive": [
+        3,
+        7,
+        12,
+        15,
+        19,
+        23,
+        27,
+        31,
+        35,
+        39,
+        43,
+        47,
+        51,
+        57,
+        59,
+        63,
+        67,
+        69,
+        73,
+        74,
+        77,
+        78,
+        82,
+        86
+      ],
+      "negative": [
+      ],
+      "content": "亦称神经质量表。表示情绪是否稳定，分数高于,表示情绪不稳,有焦虑、紧张、易怒、睡眠不好、躯体不适等症状。低于为情绪稳定的人。"
+    },
+    "P": {
+      "positive": [
+        26,
+        30,
+        34,
+        46,
+        50,
+        66,
+        68,
+        75,
+        76,
+        81,
+        85
+      ],
+      "negative": [
+        2,
+        6,
+        9,
+        11,
+        18,
+        22,
+        38,
+        42,
+        56,
+        62,
+        72,
+        88
+      ],
+      "content": "亦称精神质，表示心理是否正常。如果分数超过,表示精神质非常明显,在之间为倾向精神质,分数低于以下属正常范围。"
+    },
+    "L": {
+      "positive": [
+        20,
+        32,
+        36,
+        58,
+        87
+      ],
+      "negative": [
+        4,
+        8,
+        16,
+        24,
+        28,
+        40,
+        44,
+        48,
+        52,
+        54,
+        60,
+        64,
+        70,
+        79,
+        83
+      ],
+      "content": "测查受试的掩饰程度。L分大于60即为无效。"
+    },
+    "scoringRules": {
+      "positive": {
+        "yes": 1,
+        "no": 0
+      },
+      "negative": {
+        "yes": 1,
+        "no": 0
+      }
+    },
+    "resultOfficial": "T=50+10*(X-M)/SD,T表示标准分,X表示某受试者的问卷粗分,M表示该人群样本的均数,SD表示该人群样本的标准差"
+  },
+  "scale": {
+    "instructionalWords": "指导语：\n\n\t\t本问卷共有88个问题，请根据自己的实际情况作“是’或“不是”的回答。这些问题要求你按自己的实际情况回答，不要去猜测怎样才是正确的回答。因为这里不存在正确或错误的回答，也没有捉弄人的问题，将问题的意思看懂了就快点回答，不要花很多时间去想。每个问题都要问答。问卷无时间限制，但不要拖延太长，也不要未看懂问题便回答。",
+    "questionOptions": [
+      {
+        "yes": "是"
+      },
+      {
+        "no": "否"
+      }
+    ],
+    "adultQuestions": [
+      {
+        "questionIndex": 1,
+        "questionName": "你是否有许多不同的业余爱好？"
+      },
+      {
+        "questionIndex": 2,
+        "questionName": "你是否在做任何事情以前都要停下来仔细思考？"
+      },
+      {
+        "questionIndex": 3,
+        "questionName": "你的心境是否常有起伏？"
+      },
+      {
+        "questionIndex": 4,
+        "questionName": "你曾有过明知是别人的功劳而你去接受奖励的事吗？"
+      },
+      {
+        "questionIndex": 5,
+        "questionName": "你是否健谈？"
+      },
+      {
+        "questionIndex": 6,
+        "questionName": "欠债会使你不安吗？"
+      },
+      {
+        "questionIndex": 7,
+        "questionName": "你曾无缘无故觉得“真是难受”吗？"
+      },
+      {
+        "questionIndex": 8,
+        "questionName": "你曾贪图过份外之物吗？"
+      },
+      {
+        "questionIndex": 9,
+        "questionName": "你是否在晚上小心翼翼地关好门窗？"
+      },
+      {
+        "questionIndex": 10,
+        "questionName": "你是否比较活跃？"
+      },
+      {
+        "questionIndex": 11,
+        "questionName": "你在见到一小孩或一动物受折磨时是否会感到非常难过？"
+      },
+      {
+        "questionIndex": 12,
+        "questionName": "你是否常常为自己不该作而作了的事，不该说而说了的话而紧张吗？"
+      },
+      {
+        "questionIndex": 13,
+        "questionName": "你喜欢跳降落伞吗？"
+      },
+      {
+        "questionIndex": 14,
+        "questionName": "通常你能在热闹联欢会中尽情地玩吗？"
+      },
+      {
+        "questionIndex": 15,
+        "questionName": "你容易激动吗？"
+      },
+      {
+        "questionIndex": 16,
+        "questionName": "你曾经将自己的过错推给别人吗？"
+      },
+      {
+        "questionIndex": 17,
+        "questionName": "你喜欢会见陌生人吗？"
+      },
+      {
+        "questionIndex": 18,
+        "questionName": "你是否相信保险制度是一种好办法？"
+      },
+      {
+        "questionIndex": 19,
+        "questionName": "你是一个容易伤感情的人吗？"
+      },
+      {
+        "questionIndex": 20,
+        "questionName": "你所有的习惯都是好的吗？"
+      },
+      {
+        "questionIndex": 21,
+        "questionName": "在社交场合你是否总不愿露头角？"
+      },
+      {
+        "questionIndex": 22,
+        "questionName": "你会服用奇异或危险作用的药物吗？"
+      },
+      {
+        "questionIndex": 23,
+        "questionName": "你常有“厌倦”之感吗？"
+      },
+      {
+        "questionIndex": 24,
+        "questionName": "你曾拿过别人的东西吗 （那怕一针一线）？"
+      },
+      {
+        "questionIndex": 25,
+        "questionName": "你是否常爱外出？"
+      },
+      {
+        "questionIndex": 26,
+        "questionName": "你是否从伤害你所宠爱的人而感到乐趣？"
+      },
+      {
+        "questionIndex": 27,
+        "questionName": "你常为有罪恶之感所苦恼吗？"
+      },
+      {
+        "questionIndex": 28,
+        "questionName": "你在谈论中是否有时不懂装懂？"
+      },
+      {
+        "questionIndex": 29,
+        "questionName": "你是否宁愿去看书而不愿去多见人？"
+      },
+      {
+        "questionIndex": 30,
+        "questionName": "你有要伤害你的仇人吗？"
+      },
+      {
+        "questionIndex": 31,
+        "questionName": "你觉得自己是一个神经过敏的人吗？"
+      },
+      {
+        "questionIndex": 32,
+        "questionName": "对人有所失礼时你是否经常要表示歉意？"
+      },
+      {
+        "questionIndex": 33,
+        "questionName": "你有许多朋友吗？"
+      },
+      {
+        "questionIndex": 34,
+        "questionName": "你是否喜爱讲些有时确能伤害人的笑话？"
+      },
+      {
+        "questionIndex": 35,
+        "questionName": "你是一个多忧多虑的人吗？"
+      },
+      {
+        "questionIndex": 36,
+        "questionName": "你在童年是否按照吩咐要做什么便做什么，毫无怨言？"
+      },
+      {
+        "questionIndex": 37,
+        "questionName": "你认为你是一个乐天派吗？"
+      },
+      {
+        "questionIndex": 38,
+        "questionName": "你很讲究礼貌和整洁吗？"
+      },
+      {
+        "questionIndex": 39,
+        "questionName": "你是否总在担心会发生可怕的事情？"
+      },
+      {
+        "questionIndex": 40,
+        "questionName": "你曾损坏或遗失过别人的东西吗？"
+      },
+      {
+        "questionIndex": 41,
+        "questionName": "交新朋友时一般是你采取主动吗？"
+      },
+      {
+        "questionIndex": 42,
+        "questionName": "当别人向你诉苦时，你是否容易理解他们的苦哀？"
+      },
+      {
+        "questionIndex": 43,
+        "questionName": "你认为自己很紧张，如同“拉紧的弦”一样吗？"
+      },
+      {
+        "questionIndex": 44,
+        "questionName": "在没有废纸篓时，你是否将废纸扔在地板上？"
+      },
+      {
+        "questionIndex": 45,
+        "questionName": "当你与别人在一起时，你是否言语很少？"
+      },
+      {
+        "questionIndex": 46,
+        "questionName": "你是否认为结婚制度是过时了，应该废止？"
+      },
+      {
+        "questionIndex": 47,
+        "questionName": "你是否有时感到自己可怜？"
+      },
+      {
+        "questionIndex": 48,
+        "questionName": "你是否有时有点自夸？"
+      },
+      {
+        "questionIndex": 49,
+        "questionName": "你是否很容易将一个沉寂的集会搞得活跃起来？"
+      },
+      {
+        "questionIndex": 50,
+        "questionName": "你是否讨厌那种小心翼翼地开车的人？"
+      },
+      {
+        "questionIndex": 51,
+        "questionName": "你为你的健康担忧吗？"
+      },
+      {
+        "questionIndex": 52,
+        "questionName": "你曾讲过什么人的坏话吗？"
+      },
+      {
+        "questionIndex": 53,
+        "questionName": "你是否喜欢对朋友讲笑话和有趣的故事？"
+      },
+      {
+        "questionIndex": 54,
+        "questionName": "你小时候曾对父母粗暴无礼吗？"
+      },
+      {
+        "questionIndex": 55,
+        "questionName": "你是否喜欢与人混在一起？"
+      },
+      {
+        "questionIndex": 56,
+        "questionName": "你如果知道自己工作有错误，这会使你感到难过吗？"
+      },
+      {
+        "questionIndex": 57,
+        "questionName": "你患失眠吗？"
+      },
+      {
+        "questionIndex": 58,
+        "questionName": "你吃饭前必定洗手吗？"
+      },
+      {
+        "questionIndex": 59,
+        "questionName": "你常无缘无故感到无精打采和倦怠吗？"
+      },
+      {
+        "questionIndex": 60,
+        "questionName": "和别人玩游戏时，你有过欺骗行为吗？"
+      },
+      {
+        "questionIndex": 61,
+        "questionName": "你是否喜欢从事一些动作迅速的工作？"
+      },
+      {
+        "questionIndex": 62,
+        "questionName": "你的母亲是一位善良的妇人吗？"
+      },
+      {
+        "questionIndex": 63,
+        "questionName": "你是否常常觉得人生非常无味？"
+      },
+      {
+        "questionIndex": 64,
+        "questionName": "你曾利用过某人为自己取得好处吗?"
+      },
+      {
+        "questionIndex": 65,
+        "questionName": "你是否常常参加许多活动，超过你的时间所允许？"
+      },
+      {
+        "questionIndex": 66,
+        "questionName": "是否有几个人总在躲避你？"
+      },
+      {
+        "questionIndex": 67,
+        "questionName": "你是否为你的容貌而非常烦恼？"
+      },
+      {
+        "questionIndex": 68,
+        "questionName": "你是否觉得人们为了未来有保障而办理储蓄和保险所花的时间太多?"
+      },
+      {
+        "questionIndex": 69,
+        "questionName": "你曾有过不如死了为好的愿望吗？"
+      },
+      {
+        "questionIndex": 70,
+        "questionName": "如果有把握永远不会被别人发现，你会逃税吗？"
+      },
+      {
+        "questionIndex": 71,
+        "questionName": "你能使一个集会顺利进行吗？"
+      },
+      {
+        "questionIndex": 72,
+        "questionName": "你能克制自己不对人无礼吗？"
+      },
+      {
+        "questionIndex": 73,
+        "questionName": "遇到一次难堪的经历后，你是否在一段很长的时间内还感到难受?"
+      },
+      {
+        "questionIndex": 74,
+        "questionName": "你患有“神经过敏”吗？"
+      },
+      {
+        "questionIndex": 75,
+        "questionName": "你曾经故意说些什么来伤害别人的感情吗？"
+      },
+      {
+        "questionIndex": 76,
+        "questionName": "你与别人的友谊是否容易破裂，虽然不是你的过错？"
+      },
+      {
+        "questionIndex": 77,
+        "questionName": "你常感到孤单吗？"
+      },
+      {
+        "questionIndex": 78,
+        "questionName": "当人家寻你的差错,找你工作中的缺点时,你是否容易在精神上受挫伤？"
+      },
+      {
+        "questionIndex": 79,
+        "questionName": "你赴约会或上班曾迟到过吗？"
+      },
+      {
+        "questionIndex": 80,
+        "questionName": "你喜欢忙忙碌碌地过日子吗？"
+      },
+      {
+        "questionIndex": 81,
+        "questionName": "你愿意别人怕你吗？"
+      },
+      {
+        "questionIndex": 82,
+        "questionName": "你是否觉得有时浑身是劲，而有时又是懒洋洋的吗？"
+      },
+      {
+        "questionIndex": 83,
+        "questionName": "你有时把今天应做的事拖到明天去做吗？"
+      },
+      {
+        "questionIndex": 84,
+        "questionName": "别人认为你是生气勃勃吗？"
+      },
+      {
+        "questionIndex": 85,
+        "questionName": "别人是否对你说了许多谎话？"
+      },
+      {
+        "questionIndex": 86,
+        "questionName": "你是否容易对某些事物容易冒火？"
+      },
+      {
+        "questionIndex": 87,
+        "questionName": "当你犯了错误时，你是否常常愿意承认它？"
+      },
+      {
+        "questionIndex": 88,
+        "questionName": "你会为一动物落入圈套被捉拿而感到很难过吗？"
+      }
+    ],
+    "childQuestions": [
+      {
+        "questionIndex": 1,
+        "questionName": "你喜欢周围有许多使你高兴的事情吗？"
+      },
+      {
+        "questionIndex": 2,
+        "questionName": "你爱生气吗？"
+      },
+      {
+        "questionIndex": 3,
+        "questionName": "你喜欢伤害你喜欢的人吗？"
+      },
+      {
+        "questionIndex": 4,
+        "questionName": "你贪图过别人的便宜吗？"
+      },
+      {
+        "questionIndex": 5,
+        "questionName": "与别人交谈时，你几乎总是很快地回答别人的问题吗？"
+      },
+      {
+        "questionIndex": 6,
+        "questionName": "你很容易感到厌烦吗？"
+      },
+      {
+        "questionIndex": 7,
+        "questionName": "有时你喜欢开一些的确使人伤心的玩笑吗？"
+      },
+      {
+        "questionIndex": 8,
+        "questionName": "你总是立即按别人的吩咐去做吗？"
+      },
+      {
+        "questionIndex": 9,
+        "questionName": "你宁愿单独一人而不愿和其他小朋友在一起玩吗?"
+      },
+      {
+        "questionIndex": 10,
+        "questionName": "有很多念头占据你的头脑使你不能入睡吗?"
+      },
+      {
+        "questionIndex": 11,
+        "questionName": "你在学校曾违反过规章吗?"
+      },
+      {
+        "questionIndex": 12,
+        "questionName": "你喜欢其他小朋友怕你吗?"
+      },
+      {
+        "questionIndex": 13,
+        "questionName": "你很活泼吗?"
+      },
+      {
+        "questionIndex": 14,
+        "questionName": "有许多事情使你烦恼吗?"
+      },
+      {
+        "questionIndex": 15,
+        "questionName": "在上生物课时你喜欢杀动物吗?"
+      },
+      {
+        "questionIndex": 16,
+        "questionName": "你曾拿过别人的东西《甚至一个大头针，一粒钮扣）吗?"
+      },
+      {
+        "questionIndex": 17,
+        "questionName": "你有许多朋友吗?"
+      },
+      {
+        "questionIndex": 18,
+        "questionName": "你无缘无故的觉得“真是难受”吗?"
+      },
+      {
+        "questionIndex": 19,
+        "questionName": "有时你喜欢逗弄小动物吗?"
+      },
+      {
+        "questionIndex": 20,
+        "questionName": "别人叫你时，你有过装作没听见得事吗?"
+      },
+      {
+        "questionIndex": 21,
+        "questionName": "你喜欢在古老得闹鬼的岩洞中探险吗?"
+      },
+      {
+        "questionIndex": 22,
+        "questionName": "你常感觉生活非常无味吗?"
+      },
+      {
+        "questionIndex": 23,
+        "questionName": "你比大多数小孩更爱吵嘴打架吗?"
+      },
+      {
+        "questionIndex": 24,
+        "questionName": "你总是完成家庭作业后才去玩耍吗?"
+      },
+      {
+        "questionIndex": 25,
+        "questionName": "你喜欢做一些动作更快得事情吗?"
+      },
+      {
+        "questionIndex": 26,
+        "questionName": "你担心发生，一些可怕的事情吗?"
+      },
+      {
+        "questionIndex": 27,
+        "questionName": "当听到别的孩子骂怪话，你制止他们吗?"
+      },
+      {
+        "questionIndex": 28,
+        "questionName": "你能使一个晚会顺利开下去吗？"
+      },
+      {
+        "questionIndex": 29,
+        "questionName": "当人们发现你的错误和你工作中的缺点时，你容易伤心吗？"
+      },
+      {
+        "questionIndex": 30,
+        "questionName": "看到一只刚碾死的小狗你会难过吗？"
+      },
+      {
+        "questionIndex": 31,
+        "questionName": "当你粗鲁失礼时总要向别人道歉吗？"
+      },
+      {
+        "questionIndex": 32,
+        "questionName": "是不是有人认为你做了对不起他们的事，他们一直想报复你？"
+      },
+      {
+        "questionIndex": 33,
+        "questionName": "你认为滑雪好玩吗？"
+      },
+      {
+        "questionIndex": 34,
+        "questionName": "你常无缘无故觉得疲乏吗？"
+      },
+      {
+        "questionIndex": 35,
+        "questionName": "你很喜欢取笑其他的小朋友吗?"
+      },
+      {
+        "questionIndex": 36,
+        "questionName": "成年人谈话时，你总是保持安静吗?"
+      },
+      {
+        "questionIndex": 37,
+        "questionName": "交新朋友时，通常是你采取主动吗?"
+      },
+      {
+        "questionIndex": 38,
+        "questionName": "你为某些事情发脾气吗?"
+      },
+      {
+        "questionIndex": 39,
+        "questionName": "你常打架吗?"
+      },
+      {
+        "questionIndex": 40,
+        "questionName": "你说过别人的坏话或下流话吗?"
+      },
+      {
+        "questionIndex": 41,
+        "questionName": "你喜欢给你的朋友讲笑话或滑稽故事吗?"
+      },
+      {
+        "questionIndex": 42,
+        "questionName": "你有一阵阵头晕的感觉吗?"
+      },
+      {
+        "questionIndex": 43,
+        "questionName": "在学校里，你比大多数儿童更易受罚吗?"
+      },
+      {
+        "questionIndex": 44,
+        "questionName": "通常你会拾起别人扔在教室地板上的废纸和垃圾吗?"
+      },
+      {
+        "questionIndex": 45,
+        "questionName": "你有许多课余爱好和娱乐吗？"
+      },
+      {
+        "questionIndex": 46,
+        "questionName": "你感情很脆弱吗？"
+      },
+      {
+        "questionIndex": 47,
+        "questionName": "你喜欢作弄别人吗？"
+      },
+      {
+        "questionIndex": 48,
+        "questionName": "你总要在饭前洗手吗？"
+      },
+      {
+        "questionIndex": 49,
+        "questionName": "你在文娱活动中，你宁愿坐着看而不愿亲自参加吗？"
+      },
+      {
+        "questionIndex": 50,
+        "questionName": "你常常感到厌倦吗？"
+      },
+      {
+        "questionIndex": 51,
+        "questionName": "有时看到一伙人取笑或欺负一个小孩时你感到很好玩吗？"
+      },
+      {
+        "questionIndex": 52,
+        "questionName": "课堂上你常保持安静，甚至老师不在教室也如此吗？"
+      },
+      {
+        "questionIndex": 53,
+        "questionName": "你喜欢干点吓唬人的事吗？"
+      },
+      {
+        "questionIndex": 54,
+        "questionName": "你有时不安，以致不能在椅子上静静地坐一会吗？"
+      },
+      {
+        "questionIndex": 55,
+        "questionName": "你愿意单独上月球去吗？"
+      },
+      {
+        "questionIndex": 56,
+        "questionName": "开会时别人唱歌，你也总是一道唱吗？"
+      },
+      {
+        "questionIndex": 57,
+        "questionName": "你喜欢与别的小孩合群吗？"
+      },
+      {
+        "questionIndex": 58,
+        "questionName": "你做过许多悉梦吗？"
+      },
+      {
+        "questionIndex": 59,
+        "questionName": "你的父母对你非常严厉吗？"
+      },
+      {
+        "questionIndex": 60,
+        "questionName": "喜欢不告诉任何人独自离家到外而去漫游吗？"
+      },
+      {
+        "questionIndex": 61,
+        "questionName": "你喜欢跳降落伞吗？"
+      },
+      {
+        "questionIndex": 62,
+        "questionName": "你如果觉得自己干了件蠢事，你会后悔很久吗？"
+      },
+      {
+        "questionIndex": 63,
+        "questionName": "吃饭时摆上桌地食物你常常样样都吃吗？"
+      },
+      {
+        "questionIndex": 64,
+        "questionName": "在热闹地晚会上，你能主动参加尽情玩耍吗?"
+      },
+      {
+        "questionIndex": 65,
+        "questionName": "有时你觉得不值得活下去吗？"
+      },
+      {
+        "questionIndex": 66,
+        "questionName": "你会为落入猎人陷阱地动物而难过吗？"
+      },
+      {
+        "questionIndex": 67,
+        "questionName": "你有不尊敬父母的行为吗？"
+      },
+      {
+        "questionIndex": 68,
+        "questionName": "你常常突然下决心要干很多事情吗？"
+      },
+      {
+        "questionIndex": 69,
+        "questionName": "做作业时，你思想开小差吗？"
+      },
+      {
+        "questionIndex": 70,
+        "questionName": "当别的孩子对你吼叫时，你也用吼来回报他们吗？"
+      },
+      {
+        "questionIndex": 71,
+        "questionName": "你喜欢潜水或跳水吗?"
+      },
+      {
+        "questionIndex": 72,
+        "questionName": "夜问你因为-些事情苦恼而有过失眠吗?"
+      },
+      {
+        "questionIndex": 73,
+        "questionName": "你在学校或图书馆的书上乱写乱面吗?"
+      },
+      {
+        "questionIndex": 74,
+        "questionName": "你在家中是否好像苦是感到苦恼吗?"
+      },
+      {
+        "questionIndex": 75,
+        "questionName": "别人认为你很活泼吗?"
+      },
+      {
+        "questionIndex": 76,
+        "questionName": "你常觉得孤单吗?"
+      },
+      {
+        "questionIndex": 77,
+        "questionName": "你对别人的东西总是特別小心爱护吗?"
+      },
+      {
+        "questionIndex": 78,
+        "questionName": "你总是将自己的全部糖果与別人分着吃吗?"
+      },
+      {
+        "questionIndex": 79,
+        "questionName": "你很喜欢外出玩耍吗?"
+      },
+      {
+        "questionIndex": 80,
+        "questionName": "你在游戏中有过弄虚作假吗?"
+      },
+      {
+        "questionIndex": 81,
+        "questionName": "有时你无缘无故的感到特别高兴，而有时又无缘无故的感到特别悲伤吗?"
+      },
+      {
+        "questionIndex": 82,
+        "questionName": "找不到废纸筐时 你把废纸仍在地上吗?"
+      },
+      {
+        "questionIndex": 83,
+        "questionName": "你经常感到幸福和愉快吗?"
+      },
+      {
+        "questionIndex": 84,
+        "questionName": "你做事情往往不先想一想吗?"
+      },
+      {
+        "questionIndex": 85,
+        "questionName": "你认为自己是一个无忧无虑的人吗?"
+      },
+      {
+        "questionIndex": 86,
+        "questionName": "你常需要热心的朋友与你在一起使你高兴吗?"
+      },
+      {
+        "questionIndex": 87,
+        "questionName": "你曾经损坏或遗失过别人的东西吗?"
+      },
+      {
+        "questionIndex": 88,
+        "questionName": "你喜欢乘坐开的很快的摩托车吗?"
+      }
+    ]
+  }
+}

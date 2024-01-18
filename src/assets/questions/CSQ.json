@@ -1,0 +1,391 @@
+{
+  "scaleStandard": {
+  },
+  "scaleInfo": {
+    "ssrs": {
+      "content": "分量表的因子分=分量表单项条目分之和/分量表条目数\n\n结果解释:\n\n1、解决问题与退避两个应对因子的负相关程度最高,根据各因子与“解决问题”应对因子相关系数的大小排列“关系系列图”如下：\n\n退避、幻想、自责、求助、合理化、解决问题\n\n2、研究结果发现个体应对方式的使用一般都在一种以上，有些人甚至在同一应激事件上使用的应对方式也是多种多样。但有一定的倾向性，构成了不同的组合形式.\n\n根据计分结果分为:\n\n成熟性：“解决问题一求助”在面对应激事件或环境时常以成熟方式应对，表现出一种成热稳定的人格特征和行为方式。\n\n不成熟性：“退避——自责”则相反。\n\n混合型：“合理化”曾两面性人格特点。"
+    },
+    "workSomethingOut": {
+      "positive": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        29,
+        31,
+        40,
+        46,
+        51,
+        55
+      ],
+      "negative": [
+        19
+      ],
+      "content": "解决问题量表"
+    },
+    "kickOneself": {
+      "positive": [
+        15,
+        23,
+        25,
+        37,
+        39,
+        48,
+        50,
+        56,
+        57,
+        59
+      ],
+      "negative": [
+      ],
+      "content": "自责量表"
+    },
+    "seekHelp": {
+      "positive": [
+        10,
+        11,
+        14,
+        43,
+        53,
+        60,
+        62
+      ],
+      "negative": [
+        36,
+        39,
+        42
+      ],
+      "content": "求助量表"
+    },
+    "illusion": {
+      "positive": [
+        4,
+        12,
+        17,
+        21,
+        22,
+        26,
+        28,
+        41,
+        45,
+        49
+      ],
+      "negative": [
+      ],
+      "content": "幻想量表"
+    },
+    "evacuation": {
+      "positive": [
+        7,
+        13,
+        16,
+        19,
+        24,
+        27,
+        32,
+        34,
+        35,
+        44,
+        47
+      ],
+      "negative": [
+      ],
+      "content": "退避量表"
+    },
+    "rationalization": {
+      "positive": [
+        6,
+        9,
+        18,
+        20,
+        30,
+        33,
+        38,
+        52,
+        54,
+        58,
+        61
+      ],
+      "negative": [
+      ],
+      "content": "合理化量表"
+    },
+    "scoringRules": {
+      "positive": {
+        "yes": 1,
+        "no": 0
+      },
+      "negative": {
+        "yes": 0,
+        "no": 1
+      }
+    }
+  },
+  "scale": {
+    "instructionalWords": "指导语\n\n\t\t本问卷共有62个问题，每个问题都有两个答案“是“和“否”，请您根据自己的情况在每个条目后选择\n答案，如果选择“是”，则请继续对后面的“有效”，“比较有效”“无效“做出评估\n选择：否、是（有效、比较有效、无效）。",
+    "questionOptions": [
+      {
+        "yes": "是",
+        "options": [
+          "有效",
+          "比较有效",
+          "无效"
+        ]
+      },
+      {
+        "no": "否"
+      }
+    ],
+    "questions": [
+      {
+        "questionIndex": 1,
+        "questionName": "能理智地应付困境。"
+      },
+      {
+        "questionIndex": 2,
+        "questionName": "善于从失败中吸取经验。"
+      },
+      {
+        "questionIndex": 3,
+        "questionName": "制定一些克服困难的计划并按计划去做。"
+      },
+      {
+        "questionIndex": 4,
+        "questionName": "常希望自己已经解决了面临的困难。"
+      },
+      {
+        "questionIndex": 5,
+        "questionName": "对自己取得成功的能力充满信心。"
+      },
+      {
+        "questionIndex": 6,
+        "questionName": "认为“人生经历就是磨难”。"
+      },
+      {
+        "questionIndex": 7,
+        "questionName": "常感叹生活的艰难。"
+      },
+      {
+        "questionIndex": 8,
+        "questionName": "专心于工作或学习以忘却不快。"
+      },
+      {
+        "questionIndex": 9,
+        "questionName": "常认为“生死有命，富贵在天”。"
+      },
+      {
+        "questionIndex": 10,
+        "questionName": "常常喜欢找人聊天以减轻烦恼。"
+      },
+      {
+        "questionIndex": 11,
+        "questionName": "请求别人帮助自己克服困难。"
+      },
+      {
+        "questionIndex": 12,
+        "questionName": "常只按自己想的做，且不考虑后果。"
+      },
+      {
+        "questionIndex": 13,
+        "questionName": "不愿过多思考影响自己的情绪的问题。"
+      },
+      {
+        "questionIndex": 14,
+        "questionName": "投身其他社会活动，寻找新寄托。"
+      },
+      {
+        "questionIndex": 15,
+        "questionName": "常自暴自弃。"
+      },
+      {
+        "questionIndex": 16,
+        "questionName": "常以无所谓的态度来掩饰内心的感受。"
+      },
+      {
+        "questionIndex": 17,
+        "questionName": "常想“这不是真的就好了”。"
+      },
+      {
+        "questionIndex": 18,
+        "questionName": "认为自己的失败多系外因所致。"
+      },
+      {
+        "questionIndex": 19,
+        "questionName": "对困难采取等待观望任其发展的态度。"
+      },
+      {
+        "questionIndex": 20,
+        "questionName": "与人冲突，常是对方性格怪异引起。"
+      },
+      {
+        "questionIndex": 21,
+        "questionName": "常向引起问题的人和事发脾气。"
+      },
+      {
+        "questionIndex": 22,
+        "questionName": "常幻想自己有克服困难的超人本领。"
+      },
+      {
+        "questionIndex": 23,
+        "questionName": "常自我责备。"
+      },
+      {
+        "questionIndex": 24,
+        "questionName": "常用睡觉的方式逃避痛苦。"
+      },
+      {
+        "questionIndex": 25,
+        "questionName": "常借娱乐活动来消除烦恼。"
+      },
+      {
+        "questionIndex": 26,
+        "questionName": "常爱想些高兴的事自我安慰。"
+      },
+      {
+        "questionIndex": 27,
+        "questionName": "避开困难以求心中宁静。"
+      },
+      {
+        "questionIndex": 28,
+        "questionName": "为不能回避困难而懊恼。"
+      },
+      {
+        "questionIndex": 29,
+        "questionName": "常用两种以上的办法解决困难。"
+      },
+      {
+        "questionIndex": 30,
+        "questionName": "常认为没有必要那么费力去争成败。"
+      },
+      {
+        "questionIndex": 31,
+        "questionName": "努力去改变现状，使情况向好的一面转化。"
+      },
+      {
+        "questionIndex": 32,
+        "questionName": "借烟或酒消愁。"
+      },
+      {
+        "questionIndex": 33,
+        "questionName": "常责怪他人。"
+      },
+      {
+        "questionIndex": 34,
+        "questionName": "对困难常采用回避的态度。"
+      },
+      {
+        "questionIndex": 35,
+        "questionName": "认为退后一步自然宽。"
+      },
+      {
+        "questionIndex": 36,
+        "questionName": "把不愉快的事埋在心里。"
+      },
+      {
+        "questionIndex": 37,
+        "questionName": "常自卑自怜。"
+      },
+      {
+        "questionIndex": 38,
+        "questionName": "常认为这是生活对自己不公平的表现。"
+      },
+      {
+        "questionIndex": 39,
+        "questionName": "常压抑内心的愤怒与不满。"
+      },
+      {
+        "questionIndex": 40,
+        "questionName": "吸取自己或他人的经验去应付困难。"
+      },
+      {
+        "questionIndex": 41,
+        "questionName": "常不相信那些对自己不利的事。"
+      },
+      {
+        "questionIndex": 42,
+        "questionName": "为了自尊，常不愿让人知道自己的遭遇。"
+      },
+      {
+        "questionIndex": 43,
+        "questionName": "常与同事，朋友一起讨论解决问题的办法。"
+      },
+      {
+        "questionIndex": 44,
+        "questionName": "常告诫自己“能忍者自安。"
+      },
+      {
+        "questionIndex": 45,
+        "questionName": "常祈祷神灵保佑。"
+      },
+      {
+        "questionIndex": 46,
+        "questionName": "常用幽默或玩笑的方式缓解冲突或不快。"
+      },
+      {
+        "questionIndex": 47,
+        "questionName": "自己能力有限，只有忍耐。"
+      },
+      {
+        "questionIndex": 48,
+        "questionName": "常怪自己没出息。"
+      },
+      {
+        "questionIndex": 49,
+        "questionName": "常爱幻想一些不现实的事来消除烦恼。"
+      },
+      {
+        "questionIndex": 50,
+        "questionName": "常抱怨自己无能。"
+      },
+      {
+        "questionIndex": 51,
+        "questionName": "常能看到坏事中有好的一面。"
+      },
+      {
+        "questionIndex": 52,
+        "questionName": "自感挫折是对自己的考验。"
+      },
+      {
+        "questionIndex": 53,
+        "questionName": "向有经验的亲友、师长求教解决问题的方法。"
+      },
+      {
+        "questionIndex": 54,
+        "questionName": "平心静气，淡化烦恼。"
+      },
+      {
+        "questionIndex": 55,
+        "questionName": "努力寻找解决问题的办法。"
+      },
+      {
+        "questionIndex": 56,
+        "questionName": "选择职业不当，是自己常遇挫折的主要原因。"
+      },
+      {
+        "questionIndex": 57,
+        "questionName": "总怪自己不好。"
+      },
+      {
+        "questionIndex": 58,
+        "questionName": "经常是看破红尘，不在乎自己的不幸遭遇。"
+      },
+      {
+        "questionIndex": 59,
+        "questionName": "常自感运气不好。"
+      },
+      {
+        "questionIndex": 60,
+        "questionName": "向他人诉说心中的烦恼。"
+      },
+      {
+        "questionIndex": 61,
+        "questionName": "常自感无所作为而任其自然。"
+      },
+      {
+        "questionIndex": 62,
+        "questionName": "寻求别人的理解和同情。"
+      }
+    ]
+  }
+}

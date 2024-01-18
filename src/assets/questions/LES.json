@@ -1,0 +1,288 @@
+{
+  "scaleStandard": {
+    "normal95": [
+      {
+        "start": 0,
+        "end": 20
+      }
+    ],
+    "normal99": [
+      {
+        "start": 21,
+        "end": 32
+      }
+    ],
+    "abnormal": [
+      {
+        "start": 33,
+        "end": 99999
+      }
+    ]
+  },
+  "scaleInfo": {
+    "les": {
+      "content": "LES分数越高反映个体的精神压力越大\n\n1.95%的正常人一年内的LES总分不超过20分\n\n2.99%的不超过32分\n\n3.负性生活事件的分值越高对身心健康的影响越大，正性生活事件分值的意义尚待进一步研究。"
+    },
+    "scoringRules": {
+      "degreeOfImpact": {
+        "noEffect": 0,
+        "mild": 1,
+        "moderate": 2,
+        "seriousness": 3,
+        "extremelyHeavy": 4
+      },
+      "duration": {
+        "withinThreeMonths": 1,
+        "withinSixMonths": 2,
+        "withinAYear": 3,
+        "moreThanOneYear": 4
+      },
+      "numberOfEvents": {
+        "withinSixMonths": 1,
+        "moreThanHalfAYear": 2,
+        "disposable": 1
+      }
+    }
+  },
+  "scale": {
+    "instructionalWords": "指导语：\n\n\t\t本问卷共有48个问题，下面是每个人都有可能遇到的一些日常生活事件，究竟是好事还是坏事，可根据个人情况自行判断。这些事件可能对个人有精神上的影响（体验为紧张、压力、兴奋或苦恼等），影响的轻重程度是各不相同的。影响持续的时间也不一样。请你根据自己的情况，实事求是地回答下列问题.\n\n\t\t每道题根据事件的影响程度(无影响、轻度、中度、重度、极重)、持续时间( 三月内、半年内、一年内、一年以上)、事件次数(事件发生半年以内、事件发生半年以上、一次性事件发生的次数)进行三个维度的回答。",
+    "questionOptions": {
+      "degreeOfImpact": [
+        {
+          "noEffect": "无影响"
+        },
+        {
+          "mild": "轻度"
+        },
+        {
+          "moderate": "中度"
+        },
+        {
+          "seriousness": "重度"
+        },
+        {
+          "extremelyHeavy": "极重"
+        }
+      ],
+      "duration": [
+        {
+          "withinThreeMonths": "三月内"
+        },
+        {
+          "withinSixMonths": "半年内"
+        },
+        {
+          "withinAYear": "一年内"
+        },
+        {
+          "moreThanOneYear": "一年以上"
+        }
+      ],
+      "numberOfEvents": [
+        {
+          "withinSixMonths": "事件发生半年以内"
+        },
+        {
+          "moreThanHalfAYear": "事件发生半年以上"
+        },
+        {
+          "disposable": "一次性事件发生的次数"
+        }
+      ]
+    },
+    "questions": [
+      {
+        "questionIndex": 1,
+        "questionName": "恋爱或订婚。"
+      },
+      {
+        "questionIndex": 2,
+        "questionName": "恋爱失败、破裂。"
+      },
+      {
+        "questionIndex": 3,
+        "questionName": "结婚。"
+      },
+      {
+        "questionIndex": 4,
+        "questionName": "自己（爱人）怀孕。"
+      },
+      {
+        "questionIndex": 5,
+        "questionName": "自己（爱人）流产。"
+      },
+      {
+        "questionIndex": 6,
+        "questionName": "家庭增添新成员。"
+      },
+      {
+        "questionIndex": 7,
+        "questionName": "与爱人、父母不和。"
+      },
+      {
+        "questionIndex": 8,
+        "questionName": "夫妻感情不和。"
+      },
+      {
+        "questionIndex": 9,
+        "questionName": "夫妻分居（因不和）。"
+      },
+      {
+        "questionIndex": 10,
+        "questionName": "夫妻两地分居(工作需要)。"
+      },
+      {
+        "questionIndex": 11,
+        "questionName": "性生活不满意或独身。"
+      },
+      {
+        "questionIndex": 12,
+        "questionName": "配偶一方有外遇。"
+      },
+      {
+        "questionIndex": 13,
+        "questionName": "夫妻重归于好。"
+      },
+      {
+        "questionIndex": 14,
+        "questionName": "二胎压力。"
+      },
+      {
+        "questionIndex": 15,
+        "questionName": "丧失生育能力。"
+      },
+      {
+        "questionIndex": 16,
+        "questionName": "配偶死亡。"
+      },
+      {
+        "questionIndex": 17,
+        "questionName": "离婚。"
+      },
+      {
+        "questionIndex": 18,
+        "questionName": "子女升学（就业）失。"
+      },
+      {
+        "questionIndex": 19,
+        "questionName": "子女管教困难。"
+      },
+      {
+        "questionIndex": 20,
+        "questionName": "子女长期离家。"
+      },
+      {
+        "questionIndex": 21,
+        "questionName": "父母不和。"
+      },
+      {
+        "questionIndex": 22,
+        "questionName": "家庭经济困难。"
+      },
+      {
+        "questionIndex": 23,
+        "questionName": "因欠债感到有压力。"
+      },
+      {
+        "questionIndex": 24,
+        "questionName": "经济情况显著改善。"
+      },
+      {
+        "questionIndex": 25,
+        "questionName": "家庭成员重病、重伤。"
+      },
+      {
+        "questionIndex": 26,
+        "questionName": "家庭成员死亡。"
+      },
+      {
+        "questionIndex": 27,
+        "questionName": "本人重病或重伤。"
+      },
+      {
+        "questionIndex": 28,
+        "questionName": "住房紧张。"
+      },
+      {
+        "questionIndex": 29,
+        "questionName": "待业、无业。"
+      },
+      {
+        "questionIndex": 30,
+        "questionName": "开始就业。"
+      },
+      {
+        "questionIndex": 31,
+        "questionName": "高考失败。"
+      },
+      {
+        "questionIndex": 32,
+        "questionName": "扣发奖金或罚款。"
+      },
+      {
+        "questionIndex": 33,
+        "questionName": "突出的个人成就。"
+      },
+      {
+        "questionIndex": 34,
+        "questionName": "晋升、提拔。"
+      },
+      {
+        "questionIndex": 35,
+        "questionName": "对现职工作不满意。"
+      },
+      {
+        "questionIndex": 36,
+        "questionName": "工作学习中压力大（如成绩不好）。"
+      },
+      {
+        "questionIndex": 37,
+        "questionName": "与上级关系紧张。"
+      },
+      {
+        "questionIndex": 38,
+        "questionName": "与同事、邻居不和。"
+      },
+      {
+        "questionIndex": 39,
+        "questionName": "第一次远走异国他乡。"
+      },
+      {
+        "questionIndex": 40,
+        "questionName": "生活规律有重大变动（饮食睡眠规律改变）。"
+      },
+      {
+        "questionIndex": 41,
+        "questionName": "本人退休、离休或未安排具体工作社交及其他问题。"
+      },
+      {
+        "questionIndex": 42,
+        "questionName": "好友病重或重伤。"
+      },
+      {
+        "questionIndex": 43,
+        "questionName": "好友死亡。"
+      },
+      {
+        "questionIndex": 44,
+        "questionName": "被人误会、错怪、诬告、议论。"
+      },
+      {
+        "questionIndex": 45,
+        "questionName": "发生民事法律纠纷。"
+      },
+      {
+        "questionIndex": 46,
+        "questionName": "被拘留、受审。"
+      },
+      {
+        "questionIndex": 47,
+        "questionName": "失窃、财产损失。"
+      },
+      {
+        "questionIndex": 48,
+        "questionName": "意外惊吓、发生事故、自然灾害。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "scaleStandard": {
+    "mild": [
+      {
+        "start": 50,
+        "end": 59
+      }
+    ],
+    "moderate": [
+      {
+        "start": 60,
+        "end": 69
+      }
+    ],
+    "seriousness": [
+      {
+        "start": 69,
+        "end": 100
+      }
+    ]
+  },
+  "scaleInfo": {
+    "sas": {
+      "positive": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        18,
+        19
+      ],
+      "negative": [
+        5,
+        9,
+        13,
+        17,
+        19
+      ],
+      "content": "当前结果只是作为筛选并不是诊断焦虑情况,具体要根据受测者的临床焦虑症状来进行诊断.\n\n一般来说焦虑情况主要表现为担心、紧张、害怕、心慌、气短、频死感的情况."
+    },
+    "scoringRules": {
+      "positive": {
+        "little": 1,
+        "small": 2,
+        "many": 3,
+        "most": 4
+      },
+      "negative": {
+        "little": 4,
+        "small": 3,
+        "many": 2,
+        "most": 1
+      }
+    }
+  },
+  "scale": {
+    "instructionalWords": "指导语：\n\n\t\t本问卷共有20个问题，请根据自己的实际情况存在的时间长短作“没有或很少时间’、“小部分时间”、“相当多时间”、“绝大部分”的回答。这些问题要求你按自己的实际情况回答，不要去猜测怎样才是正确的回答。因为这里不存在正确或错误的回答，也没有捉弄人的问题，将问题的意思看懂了就快点回答，不要花很多时间去想。每个问题都要问答。问卷无时间限制，但不要拖延太长，也不要未看懂问题便回答。",
+    "questionOptions": [
+      {
+        "little": "没有或很少时间"
+      },
+      {
+        "small": "小部分时间"
+      },
+      {
+        "many": "相当多时间"
+      },
+      {
+        "most": "绝大部分"
+      }
+    ],
+    "questions": [
+      {
+        "questionIndex": 1,
+        "questionName": "我觉得比平时容易紧张和着急。"
+      },
+      {
+        "questionIndex": 2,
+        "questionName": "我无缘无故地感到害怕。"
+      },
+      {
+        "questionIndex": 3,
+        "questionName": "我容易心理烦乱或觉得惊恐。"
+      },
+      {
+        "questionIndex": 4,
+        "questionName": "我觉得我可能将要发疯。"
+      },
+      {
+        "questionIndex": 5,
+        "questionName": "我觉得一切都好，也不会发生什么不幸。"
+      },
+      {
+        "questionIndex": 6,
+        "questionName": "我手脚发抖打颤。"
+      },
+      {
+        "questionIndex": 7,
+        "questionName": "我因为头痛、头颈痛和背痛而苦恼。"
+      },
+      {
+        "questionIndex": 8,
+        "questionName": "我感觉容易衰弱和疲乏。"
+      },
+      {
+        "questionIndex": 9,
+        "questionName": "我觉得心平气和，并且容易安静坐着。"
+      },
+      {
+        "questionIndex": 10,
+        "questionName": "我觉得心跳得很快。"
+      },
+      {
+        "questionIndex": 11,
+        "questionName": "我因为一阵阵头痛而苦恼。"
+      },
+      {
+        "questionIndex": 12,
+        "questionName": "我有晕倒发作，或觉得要晕倒似的。"
+      },
+      {
+        "questionIndex": 13,
+        "questionName": "我吸气呼气都感到很容易。"
+      },
+      {
+        "questionIndex": 14,
+        "questionName": "我的手脚麻木和刺痛。"
+      },
+      {
+        "questionIndex": 15,
+        "questionName": "我因为胃痛和消化不良而苦恼。"
+      },
+      {
+        "questionIndex": 16,
+        "questionName": "我常常要小便。"
+      },
+      {
+        "questionIndex": 17,
+        "questionName": "我的手常常是干燥温暖的。"
+      },
+      {
+        "questionIndex": 18,
+        "questionName": "我脸红发热。"
+      },
+      {
+        "questionIndex": 19,
+        "questionName": "我容易入睡，并且一夜睡得很好。"
+      },
+      {
+        "questionIndex": 20,
+        "questionName": "我做恶梦。"
+      }
+    ]
+  }
+}
