@@ -3,7 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import {Progress, Icon, NavBar, Tab, Tabs, RadioGroup, Radio} from 'vant'
 
+Vue.use(Progress)
+  .use(Icon)
+  .use(NavBar)
+  .use(Tab)
+  .use(Tabs)
+  .use(RadioGroup)
+  .use(Radio)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

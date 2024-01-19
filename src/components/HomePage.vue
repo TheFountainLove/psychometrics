@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div id="home">
     <img src="../assets/images/img_focus_solution.jpg" alt=""/>
     <h3>{{ msg }}</h3>
     <h4>选择心理量表，进入测评。</h4>
@@ -48,6 +48,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#home {
+  text-align: center;
+  margin-top: 60px;
+}
+
 h3 {
   font-weight: normal;
   padding-left: 20px;
