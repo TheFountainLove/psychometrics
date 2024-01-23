@@ -8,25 +8,25 @@
         <router-link :to="RouterPath.EPQAdult.path">EPQ-艾森克人格问卷量表-成人版</router-link>
       </li>
       <li>
-        <router-link :to="RouterPath.EPQAdult.path">EPQ-艾森克人格问卷量表-儿童版</router-link>
+        <router-link :to="RouterPath.EPQChildren.path">EPQ-艾森克人格问卷量表-儿童版</router-link>
+      </li>
+<!--      <li>-->
+<!--        <router-link to="/">LES-生活事件应激量表</router-link>-->
+<!--      </li>-->
+      <li>
+        <router-link  :to="RouterPath.CSQ.path">CSQ-应对方式量表</router-link>
+      </li>
+<!--      <li>-->
+<!--        <router-link to="/">SSRS-社会支持评定量表</router-link>-->
+<!--      </li>-->
+      <li>
+        <router-link :to="RouterPath.SCL90.path">SCL-90项症状量表</router-link>
       </li>
       <li>
-        <router-link to="/">LES-生活事件应激量表</router-link>
+        <router-link :to="RouterPath.SAS.path">SAS-焦虑量表</router-link>
       </li>
       <li>
-        <router-link to="/">CSQ-应对方式量表</router-link>
-      </li>
-      <li>
-        <router-link to="/">SSRS-社会支持评定量表</router-link>
-      </li>
-      <li>
-        <router-link to="/">SCL-90项症状量表</router-link>
-      </li>
-      <li>
-        <router-link to="/">SAS-焦虑量表</router-link>
-      </li>
-      <li>
-        <router-link to="/">SDS-抑郁量表</router-link>
+        <router-link :to="RouterPath.SDS.path">SDS-抑郁量表</router-link>
       </li>
     </ul>
   </div>
