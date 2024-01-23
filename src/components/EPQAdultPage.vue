@@ -22,7 +22,8 @@
       </van-tabs>
       <van-button class="button-content" type="info" size="large" :round="true" @click="getEpqResult">获取结果
       </van-button>
-      <van-icon name="back-top" color="#1989fa" size="30px" class="floating-button" v-show="showButton" @click="scrollToTop"/>
+      <van-icon name="back-top" color="#1989fa" size="30px" class="floating-button-top" v-show="showButton" @click="scrollToTop"/>
+      <van-icon name="back-top" color="#1989fa" size="30px" class="floating-button-bottom" v-show="showButton" @click="scrollToBottom"/>
       <span style="display: flex;white-space: pre-wrap;margin-top: 20px">{{ epqResult }}</span>
     </ul>
   </div>
@@ -57,6 +58,13 @@ export default {
         behavior: 'smooth' // 平滑滚动
       })
     },
+    scrollToBottom () {
+      const container = document.documentElement
+      container.scrollTo({
+        top: container.scrollHeight,
+        behavior: 'smooth' // 平滑滚动
+      })
+    },
     goBack () {
       router.go(-1)
     },
@@ -64,7 +72,7 @@ export default {
       return this.result[index] !== undefined
     },
     getEpqResult () {
-      if (this.result.length === jsonEpq.scale.adultQuestions.length) {
+      if (Object.keys(this.result).length === jsonEpq.scale.adultQuestions.length) {
         let eScore = this.calculateScore(jsonEpq.scaleInfo['E'].positive, jsonEpq.scaleInfo['E'].negative)
         let nScore = this.calculateScore(jsonEpq.scaleInfo['N'].positive, jsonEpq.scaleInfo['N'].negative)
         let pScore = this.calculateScore(jsonEpq.scaleInfo['P'].positive, jsonEpq.scaleInfo['P'].negative)
@@ -164,11 +172,18 @@ export default {
 
 </script>
 <style scoped>
-.floating-button {
+.floating-button-top {
   position: fixed;
   bottom: 160px;
   right: 20px;
   z-index: 9999;
+}
+.floating-button-bottom {
+  position: fixed;
+  bottom: 130px;
+  right: 20px;
+  z-index: 9999;
+  transform: rotate(180deg)
 }
 .button-content{
   margin-top: 20px;
