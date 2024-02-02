@@ -1,13 +1,41 @@
 {
   "scaleStandard": {
+
   },
   "scaleInfo": {
     "ssrs": {
-      "content": "总分:\n\n即10个条目评分之和（0—66分）\n\n维度分：\n\n客观支持分：2、6、7条评分之和\n\n主观支持分：1、3、4、5条分之和\n\n对支持的利用度：8、9、10条分之和。"
+      "content": "最终的结果表示，分数越高表示您社会支持的利用程度越好。"
     },
-    "scoringRules": [
-      {
-        "topic": "1,2,3,4,8,9,10",
+    "support": {
+      "objective": {
+        "topic": [
+          2,
+          6,
+          7
+        ],
+        "content": "反映您主观感受到自己被尊重、支持、理解的情感体验和满意程度的程度。"
+      },
+      "subjective": {
+        "topic": [
+          1,
+          3,
+          4,
+          5
+        ],
+        "content": "反映您认为自己实际得到的支持，包括直接援助和社会关系两方面的程度。"
+      },
+      "usage": {
+        "topic": [
+          8,
+          9,
+          10
+        ],
+        "content": "反映您对社会支持的利用程度的程度。"
+      }
+    },
+    "scoringRules": {
+      "radio": {
+        "topic": "1,2,3,4,5,8,9,10",
         "score": [
           1,
           2,
@@ -15,196 +43,196 @@
           4
         ]
       },
-      {
-        "topic": "5",
-        "score": [
-          1,
-          2,
-          3,
-          4
-        ]
-      },
-      {
+      "multipleChoices": {
         "topic": "6,7",
         "score": [
           0,
           1
         ]
       }
-    ]
+    }
   },
   "scale": {
     "instructionalWords": "指导语\n\n\t\t本问卷共有10个问题：下面的问题用于反映您在社会中所获得的支持，请按各个问题的具体要求，根据您的实际情况写。",
     "questions": [
       {
-        "questions": [
+        "questionIndex": 1,
+        "questionName": "您有多少关系密切，可以得到支持和帮助的朋友？（只选一项）",
+        "questionOptions": [
+          "一个也没有",
+          "1—2个",
+          "3-5个",
+          "6个或6个以上"
+        ]
+      },
+      {
+        "questionIndex": 2,
+        "questionName": "近一年来您：（只选一项）",
+        "questionOptions": [
+          "远离家人，且独居一室",
+          "住处经常变动，多数时间和陌生人住在一起",
+          "和同学、同事或朋友住在一起",
+          "和家人住在一起"
+        ]
+      },
+      {
+        "questionIndex": 3,
+        "questionName": "您与邻居：（只选一项）",
+        "questionOptions": [
+          "相互之间从不关心，只是点头之交",
+          "遇到困难可能稍微关心",
+          "有些邻居都很关心您",
+          "大多数邻居都很关心您"
+        ]
+      },
+      {
+        "questionIndex": 4,
+        "questionName": "您与同事：（只选一项）",
+        "questionOptions": [
+          "相互之间从不关心，只是点头之交",
+          "遇到困难可能稍微关心",
+          "有些同事很关心您",
+          "大多数同事都很关心您"
+        ]
+      },
+      {
+        "questionIndex": 5,
+        "questionName": "从家庭成员得到的支持和照顾",
+        "multipleChoiceQuestions": 1,
+        "questionOptions": [
           {
-            "questionIndex": 1,
-            "questionName": "您有多少关系密切，可以得到支持和帮助的朋友？（只选一项）",
-            "questionOptions": [
-              "一个也没有",
-              "1—2个",
-              "3-5个",
-              "6个或6个以上"
+            "source": "夫妻（恋人）",
+            "options": [
+              "无",
+              "极少",
+              "一般",
+              "全力支持"
             ]
           },
           {
-            "questionIndex": 2,
-            "questionName": "近一年来您：（只选一项）",
-            "questionOptions": [
-              "远离家人，且独居一室。",
-              "住处经常变动，多数时间和陌生人住在一起。",
-              "和同学、同事或朋友住在一起。",
-              "和家人住在一起。"
+            "source": "父母",
+            "options": [
+              "无",
+              "极少",
+              "一般",
+              "全力支持"
             ]
           },
           {
-            "questionIndex": 3,
-            "questionName": "您与邻居：（只选一项）",
-            "questionOptions": [
-              "相互之间从不关心，只是点头之交。",
-              "遇到困难可能稍微关心。",
-              "有些邻居都很关心您。",
-              "大多数邻居都很关心您。"
+            "source": "儿女",
+            "options": [
+              "无",
+              "极少",
+              "一般",
+              "全力支持"
             ]
           },
           {
-            "questionIndex": 4,
-            "questionName": "您与同事：（只选一项）",
-            "questionOptions": [
-              "相互之间从不关心，只是点头之交。",
-              "遇到困难可能稍微关心。",
-              "有些同事很关心您。",
-              "大多数同事都很关心您。"
+            "source": "兄弟姐妹",
+            "options": [
+              "无",
+              "极少",
+              "一般",
+              "全力支持"
             ]
           },
           {
-            "questionIndex": 5,
-            "questionName": "从家庭成员得到的支持和照顾",
-            "questionOptions": [
-              {
-                "relationship": "夫妻（恋人）",
-                "options": [
-                  "无",
-                  "极少",
-                  "一般",
-                  "全力支持"
-                ]
-              },
-              {
-                "relationship": "父母",
-                "options": [
-                  "无",
-                  "极少",
-                  "一般",
-                  "全力支持"
-                ]
-              },
-              {
-                "relationship": "儿女",
-                "options": [
-                  "无",
-                  "极少",
-                  "一般",
-                  "全力支持"
-                ]
-              },
-              {
-                "relationship": "兄弟姐妹",
-                "options": [
-                  "无",
-                  "极少",
-                  "一般",
-                  "全力支持"
-                ]
-              },
-              {
-                "relationship": "其他成员（如嫂子）",
-                "options": [
-                  "无",
-                  "极少",
-                  "一般",
-                  "全力支持"
-                ]
-              }
-            ]
-          },
-          {
-            "questionIndex": 6,
-            "questionName": "过去，在您遇到急难情况时，曾经得到的经济支持和解决实际问题的帮助的来源有：",
-            "questionOptions": [
-              {
-                "source": "无任何来源。"
-              },
-              {
-                "source": "下列来源：（可选多项）",
-                "options": [
-                  "配偶",
-                  "其他家人",
-                  "亲戚",
-                  "朋友",
-                  "同事",
-                  "工作单位",
-                  "党团工会等官方或半官方组织",
-                  "宗教、社会团体等非官方组织",
-                  "其它（请列出）"
-                ]
-              }
-            ]
-          },
-          {
-            "questionIndex": 7,
-            "questionName": "过去，在您遇到急难情况时，曾经得到的安慰和关心的来源有：",
-            "questionOptions": [
-              {
-                "source": "无任何来源。"
-              },
-              {
-                "source": "下列来源：（可选多项）",
-                "options": [
-                  "配偶",
-                  "其他家人",
-                  "亲戚",
-                  "朋友",
-                  "同事",
-                  "工作单位",
-                  "党团工会等官方或半官方组织",
-                  "宗教、社会团体等非官方组织",
-                  "其它（请列出）"
-                ]
-              }
-            ]
-          },
-          {
-            "questionIndex": 8,
-            "questionName": "您遇到烦恼时的倾诉方式：（只选一项）",
-            "questionOptions": [
-              "从不向任何人诉述。",
-              "只向关系极为密切的1-2个人诉述。",
-              "如果朋友主动询问您会说出来。",
-              "主动诉述自己的烦恼，以获得支持和理解。"
-            ]
-          },
-          {
-            "questionIndex": 9,
-            "questionName": "您遇到烦恼时的求助方式：（只选一项）",
-            "questionOptions": [
-              "只靠自己，不接受别人帮助。",
-              "很少请求别人帮助。",
-              "有时请求别人帮助。",
-              "有困难时经常向家人、亲友、组织求援。"
-            ]
-          },
-          {
-            "questionIndex": 10,
-            "questionName": "对于团体（如党团组织、宗教组织、工会、学生会等）组织活动，您：（只选一项）",
-            "questionOptions": [
-              "从不参加",
-              "偶尔参加",
-              "经常参加",
-              "主动参加并积极活动。"
+            "source": "其他成员（如嫂子）",
+            "options": [
+              "无",
+              "极少",
+              "一般",
+              "全力支持"
             ]
           }
+        ]
+      },
+      {
+        "questionIndex": 6,
+        "questionName": "过去，在您遇到急难情况时，曾经得到的经济支持和解决实际问题的帮助的来源有：",
+        "multipleChoiceQuestions": 1,
+        "questionOptions": [
+          {
+            "source": "下列来源：",
+            "multipleChoiceQuestions": 1,
+            "options": [
+              "无任何来源"
+            ]
+          },
+          {
+            "source": "下列来源：（可选多项）",
+            "multipleChoiceQuestions": 1,
+            "options": [
+              "配偶",
+              "其他家人",
+              "亲戚",
+              "朋友",
+              "同事",
+              "工作单位",
+              "党团工会等官方或半官方组织",
+              "宗教、社会团体等非官方组织",
+              "其它（请输出来源的个数）"
+            ]
+          }
+        ]
+      },
+      {
+        "questionIndex": 7,
+        "questionName": "过去，在您遇到急难情况时，曾经得到的安慰和关心的来源有：",
+        "multipleChoiceQuestions": 1,
+        "questionOptions": [
+          {
+            "source": "下列来源：",
+            "multipleChoiceQuestions": 1,
+            "options": [
+              "无任何来源"
+            ]
+          },
+          {
+            "source": "下列来源：（可选多项）",
+            "multipleChoiceQuestions": 1,
+            "options": [
+              "配偶",
+              "其他家人",
+              "亲戚",
+              "朋友",
+              "同事",
+              "工作单位",
+              "党团工会等官方或半官方组织",
+              "宗教、社会团体等非官方组织",
+              "其它（请输出来源的个数）"
+            ]
+          }
+        ]
+      },
+      {
+        "questionIndex": 8,
+        "questionName": "您遇到烦恼时的倾诉方式：（只选一项）",
+        "questionOptions": [
+          "从不向任何人诉述。",
+          "只向关系极为密切的1-2个人诉述。",
+          "如果朋友主动询问您会说出来。",
+          "主动诉述自己的烦恼，以获得支持和理解。"
+        ]
+      },
+      {
+        "questionIndex": 9,
+        "questionName": "您遇到烦恼时的求助方式：（只选一项）",
+        "questionOptions": [
+          "只靠自己，不接受别人帮助。",
+          "很少请求别人帮助。",
+          "有时请求别人帮助。",
+          "有困难时经常向家人、亲友、组织求援。"
+        ]
+      },
+      {
+        "questionIndex": 10,
+        "questionName": "对于团体（如党团组织、宗教组织、工会、学生会等）组织活动，您：（只选一项）",
+        "questionOptions": [
+          "从不参加",
+          "偶尔参加",
+          "经常参加",
+          "主动参加并积极活动。"
         ]
       }
     ]
