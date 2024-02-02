@@ -22,5 +22,13 @@ export const RouterPath = {
   CSQ: {
     path: '/CSQ',
     name: 'CSQ'
+  },
+  LES: {
+    path: '/LES',
+    name: 'LES'
+  },
+  SSRS: {
+    path: '/SSRS',
+    name: 'SSRS'
   }
 }

@@ -7,6 +7,8 @@ import SDSPage from '@/components/SDSPage.vue'
 import SASPage from '@/components/SASPage.vue'
 import SCL90Page from '@/components/SCL90Page.vue'
 import CSQPage from '@/components/CSQPage.vue'
+import LESPage from '@/components/LESPage.vue'
+import SSRSPage from '@/components/SSRSPage.vue'
 import {RouterPath} from '@/const/RouterPath'
 
 Vue.use(Router)
@@ -47,6 +49,16 @@ export default new Router({
       path: RouterPath.CSQ.path,
       name: RouterPath.CSQ.name,
       component: CSQPage
+    },
+    {
+      path: RouterPath.LES.path,
+      name: RouterPath.LES.name,
+      component: LESPage
+    },
+    {
+      path: RouterPath.SSRS.path,
+      name: RouterPath.SSRS.name,
+      component: SSRSPage
     }
   ]
 })

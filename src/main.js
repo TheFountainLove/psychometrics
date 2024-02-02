@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import {Progress, Icon, NavBar, Tab, Tabs, RadioGroup, Radio, Button, Toast} from 'vant'
+import {Progress, Icon, NavBar, Tab, Tabs, RadioGroup, Radio, Button, Toast, Stepper, Checkbox, CheckboxGroup} from 'vant'
 
 Vue.use(Progress)
   .use(Icon)
@@ -14,6 +14,9 @@ Vue.use(Progress)
   .use(Radio)
   .use(Button)
   .use(Toast)
+  .use(Stepper)
+  .use(Checkbox)
+  .use(CheckboxGroup)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
