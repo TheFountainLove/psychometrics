@@ -97,82 +97,81 @@ export default {
       return this.result[index] !== undefined
     },
     getResult () {
-      // 创建一个空对象来存储转换后的数据
-      const transformedData = {}
-      // 遍历原始数据的键值对
-      for (const key in this.result) {
-        // 提取原始键中的前缀，即 "47"
-        const prefix = key.split('_')[0]
-        let suffix = key.split('_')[1]
-        if (suffix === undefined) {
-          suffix = 0
-        }
-        // 如果 transformedData 中不存在此前缀，则创建一个空数组
-        if (!transformedData[prefix]) {
-          transformedData[prefix] = []
-        }
-        // 将原始值添加到以前缀为键的数组中
-        transformedData[prefix][suffix] = this.result[key]
-      }
-      let resultScore = 0
-      let resultObjectiveScore = 0
-      let resultSubjectiveScore = 0
-      let resultUsageScore = 0
-      let radio = measurementJson.scaleInfo.scoringRules.radio
-      let multipleChoices = measurementJson.scaleInfo.scoringRules.multipleChoices
-      let objective = measurementJson.scaleInfo.support.objective
-      let subjective = measurementJson.scaleInfo.support.subjective
-      let usage = measurementJson.scaleInfo.support.usage
-      for (let key in transformedData) {
-        let titleIndex = parseInt(key) + 1
-        if (radio.topic.indexOf(titleIndex) !== -1) {
-          transformedData[key].forEach((item, index) => {
-            resultScore += radio.score[item]
-            if (objective.topic.indexOf(titleIndex) !== -1) {
-              resultObjectiveScore += radio.score[item]
-            }
-            if (subjective.topic.indexOf(titleIndex) !== -1) {
-              resultSubjectiveScore += radio.score[item]
-            }
-            if (usage.topic.indexOf(titleIndex) !== -1) {
-              resultUsageScore += radio.score[item]
-            }
-          })
-        }
-        if (multipleChoices.topic.indexOf(titleIndex) !== -1) {
-          if (transformedData[key][0] !== undefined) {
-            resultScore += multipleChoices.score[0]
+      if (Object.keys(this.result).length === measurementJson.scale.questions.length) {
+        // 创建一个空对象来存储转换后的数据
+        const transformedData = {}
+        // 遍历原始数据的键值对
+        for (const key in this.result) {
+          // 提取原始键中的前缀，即 "47"
+          const prefix = key.split('_')[0]
+          let suffix = key.split('_')[1]
+          if (suffix === undefined) {
+            suffix = 0
           }
-          if (transformedData[key][1] !== undefined) {
-            transformedData[key][1].forEach((item, index) => {
-              let tempScore = 0
-              if (item === 8) {
-                tempScore = this.result1[key] * multipleChoices.score[1]
-              } else {
-                tempScore = multipleChoices.score[1]
-              }
-              resultScore += tempScore
+          // 如果 transformedData 中不存在此前缀，则创建一个空数组
+          if (!transformedData[prefix]) {
+            transformedData[prefix] = []
+          }
+          // 将原始值添加到以前缀为键的数组中
+          transformedData[prefix][suffix] = this.result[key]
+        }
+        let resultScore = 0
+        let resultObjectiveScore = 0
+        let resultSubjectiveScore = 0
+        let resultUsageScore = 0
+        let radio = measurementJson.scaleInfo.scoringRules.radio
+        let multipleChoices = measurementJson.scaleInfo.scoringRules.multipleChoices
+        let objective = measurementJson.scaleInfo.support.objective
+        let subjective = measurementJson.scaleInfo.support.subjective
+        let usage = measurementJson.scaleInfo.support.usage
+        for (let key in transformedData) {
+          let titleIndex = parseInt(key) + 1
+          if (radio.topic.indexOf(titleIndex) !== -1) {
+            transformedData[key].forEach((item, index) => {
+              resultScore += radio.score[item]
               if (objective.topic.indexOf(titleIndex) !== -1) {
-                resultObjectiveScore += tempScore
+                resultObjectiveScore += radio.score[item]
               }
               if (subjective.topic.indexOf(titleIndex) !== -1) {
-                resultSubjectiveScore += tempScore
+                resultSubjectiveScore += radio.score[item]
               }
               if (usage.topic.indexOf(titleIndex) !== -1) {
-                resultUsageScore += tempScore
+                resultUsageScore += radio.score[item]
               }
             })
           }
+          if (multipleChoices.topic.indexOf(titleIndex) !== -1) {
+            if (transformedData[key][0] !== undefined) {
+              resultScore += multipleChoices.score[0]
+            }
+            if (transformedData[key][1] !== undefined) {
+              transformedData[key][1].forEach((item, index) => {
+                let tempScore = 0
+                if (item === 8) {
+                  tempScore = this.result1[key] * multipleChoices.score[1]
+                } else {
+                  tempScore = multipleChoices.score[1]
+                }
+                resultScore += tempScore
+                if (objective.topic.indexOf(titleIndex) !== -1) {
+                  resultObjectiveScore += tempScore
+                }
+                if (subjective.topic.indexOf(titleIndex) !== -1) {
+                  resultSubjectiveScore += tempScore
+                }
+                if (usage.topic.indexOf(titleIndex) !== -1) {
+                  resultUsageScore += tempScore
+                }
+              })
+            }
+          }
         }
-      }
-      let resultDes = '根据您的测量结果，您的总分为：'
-      resultDes += resultScore + '。 \n\n'
-      resultDes += '您客观支持程度的分数为：' + resultObjectiveScore + '。' + objective.content + '\n\n'
-      resultDes += '您主观支持程度的分数为：' + resultSubjectiveScore + '。' + objective.content + '\n\n'
-      resultDes += '您对支持的利用程度的分数为：' + resultUsageScore + '。' + objective.content + '\n\n'
-      this.measurementResult = resultDes + measurementJson.scaleInfo.ssrs.content
-      if (Object.keys(this.result).length === measurementJson.scale.questions.length) {
-
+        let resultDes = '根据您的测量结果，您的总分为：'
+        resultDes += resultScore + '。 \n\n'
+        resultDes += '您客观支持程度的分数为：' + resultObjectiveScore + '。' + objective.content + '\n\n'
+        resultDes += '您主观支持程度的分数为：' + resultSubjectiveScore + '。' + objective.content + '\n\n'
+        resultDes += '您对支持的利用程度的分数为：' + resultUsageScore + '。' + objective.content + '\n\n'
+        this.measurementResult = resultDes + measurementJson.scaleInfo.ssrs.content
       } else {
         this.$toast('您还有未做完的题目，未作答的题目未被标记红点，请继续作答！')
       }
