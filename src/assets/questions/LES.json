@@ -21,75 +21,60 @@
   },
   "scaleInfo": {
     "les": {
-      "content": "LES分数越高反映个体的精神压力越大\n\n1.95%的正常人一年内的LES总分不超过20分\n\n2.99%的不超过32分\n\n3.负性生活事件的分值越高对身心健康的影响越大，正性生活事件分值的意义尚待进一步研究。"
+      "content": "LES分数越高反映个体的精神压力越大。\n1.95%的正常人一年内的LES总分不超过20分\n2.99%的不超过32分\n3.负性生活事件的分值越高对身心健康的影响越大，正性生活事件分值的意义尚待进一步研究。"
     },
     "scoringRules": {
-      "degreeOfImpact": {
-        "noEffect": 0,
-        "mild": 1,
-        "moderate": 2,
-        "seriousness": 3,
-        "extremelyHeavy": 4
-      },
-      "duration": {
-        "withinThreeMonths": 1,
-        "withinSixMonths": 2,
-        "withinAYear": 3,
-        "moreThanOneYear": 4
-      },
-      "numberOfEvents": {
-        "withinSixMonths": 1,
-        "moreThanHalfAYear": 2,
-        "disposable": 1
-      }
+      "degreeOfImpact": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "duration": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "numberOfEvents": [
+        1,
+        2,
+        1
+      ]
     }
   },
   "scale": {
     "instructionalWords": "指导语：\n\n\t\t本问卷共有48个问题，下面是每个人都有可能遇到的一些日常生活事件，究竟是好事还是坏事，可根据个人情况自行判断。这些事件可能对个人有精神上的影响（体验为紧张、压力、兴奋或苦恼等），影响的轻重程度是各不相同的。影响持续的时间也不一样。请你根据自己的情况，实事求是地回答下列问题.\n\n\t\t每道题根据事件的影响程度(无影响、轻度、中度、重度、极重)、持续时间( 三月内、半年内、一年内、一年以上)、事件次数(事件发生半年以内、事件发生半年以上、一次性事件发生的次数)进行三个维度的回答。",
-    "questionOptions": {
-      "degreeOfImpact": [
-        {
-          "noEffect": "无影响"
-        },
-        {
-          "mild": "轻度"
-        },
-        {
-          "moderate": "中度"
-        },
-        {
-          "seriousness": "重度"
-        },
-        {
-          "extremelyHeavy": "极重"
-        }
-      ],
-      "duration": [
-        {
-          "withinThreeMonths": "三月内"
-        },
-        {
-          "withinSixMonths": "半年内"
-        },
-        {
-          "withinAYear": "一年内"
-        },
-        {
-          "moreThanOneYear": "一年以上"
-        }
-      ],
-      "numberOfEvents": [
-        {
-          "withinSixMonths": "事件发生半年以内"
-        },
-        {
-          "moreThanHalfAYear": "事件发生半年以上"
-        },
-        {
-          "disposable": "一次性事件发生的次数"
-        }
-      ]
-    },
+    "questionOptions": [
+      {
+        "name": "影响程度",
+        "options": [
+          "无影响",
+          "轻度",
+          "中度",
+          "重度",
+          "极重"
+        ]
+      },
+      {
+        "name": "持续时间",
+        "options": [
+          "三月内",
+          "半年内",
+          "一年内",
+          "一年以上"
+        ]
+      },
+      {
+        "name": "事件次数",
+        "options": [
+          "事件发生半年以内",
+          "事件发生半年以上",
+          "一次性事件发生的次数"
+        ]
+      }
+    ],
     "questions": [
       {
         "questionIndex": 1,
