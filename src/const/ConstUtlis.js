@@ -1,4 +1,4 @@
-const token = 'Z2l0aHViX3BhdF8xMUFIQUNKRFkwY2pXRUhzYVpIUElMX0x3TmtRcXY1SHlieFRBQ2psOXRWcDhsZms1NzJNN0J1V09hYk9UMnBneUsyTVNOTlhSUzNMTEc4MVBy'
+const token = 'Z2l0aHViX3BhdF8xMUFIQUNKRFkwRUtOQ0d2YlgwNjRHX3l0aFB2bnVXQ1BqTVFyZEdpRG0wVEdUcXp2OHBuallhTUE2NHlQMHlkZXdPUFhLQ0VVT2JQa1lwVnE1'
 const owner = 'TheFountainLove'
 const repo = 'psychological-assessment-data'
 const pathPrefix = 'data/psychological-assessment-data'
