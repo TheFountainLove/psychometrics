@@ -36,8 +36,7 @@
 <script>
 import router from '@/router'
 import measurementJson from '@/assets/questions/LES.json'
-import {uploadScaleResults} from '@/utils/UploadFile'
-import moment from 'moment'
+
 export default {
   data () {
     return {
@@ -116,13 +115,6 @@ export default {
         let resultDes = '根据您的测量结果，您的总分为：'
         resultDes += resultScore + '。 \n\n'
         this.measurementResult = resultDes + measurementJson.scaleInfo.les.content
-        const time = moment().format('YYYY-MM-DD HH:mm:ss')
-        uploadScaleResults('les', {
-          'options': [this.result, this.result1],
-          'score': resultScore,
-          'content': this.measurementResult,
-          'createTime': time
-        })
       } else {
         this.$toast('您还有未做完的题目，未作答的题目未被标记红点，请继续作答！')
       }

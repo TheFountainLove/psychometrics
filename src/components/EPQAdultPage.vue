@@ -31,8 +31,6 @@
 <script>
 import router from '@/router'
 import measurementJson from '@/assets/questions/EPQ.json'
-import {uploadScaleResults} from '@/utils/UploadFile'
-import moment from 'moment'
 
 export default {
   data () {
@@ -80,12 +78,6 @@ export default {
         let pScore = this.calculateScore(measurementJson.scaleInfo['P'].positive, measurementJson.scaleInfo['P'].negative)
         let lScore = this.calculateScore(measurementJson.scaleInfo['L'].positive, measurementJson.scaleInfo['L'].negative)
         let totalScore = eScore + nScore + pScore + lScore
-        let score = {
-          'E': eScore,
-          'N': nScore,
-          'P': pScore,
-          'L': lScore
-        }
         let normal = measurementJson.scaleStandard.epq.normal[0]
         let mild1 = measurementJson.scaleStandard.epq.mild[0]
         let mild2 = measurementJson.scaleStandard.epq.mild[1]
@@ -152,14 +144,6 @@ export default {
         }
         // console.log(result, eResult, pResult, nResult, lResult)
         this.measurementResult = '最终结果解释如下：\n\n' + result + eResult + pResult + nResult + lResult
-        const time = moment().format('YYYY-MM-DD HH:mm:ss')
-        uploadScaleResults('epqAdult', {
-          'options': [this.result],
-          'structureScore': score,
-          'score': totalScore,
-          'content': this.measurementResult,
-          'createTime': time
-        })
       } else {
         this.$toast('您还有未做完的题目，未作答的题目未被标记红点，请继续作答！')
       }

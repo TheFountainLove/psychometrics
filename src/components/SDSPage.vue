@@ -31,8 +31,6 @@
 <script>
 import router from '@/router'
 import measurementJson from '@/assets/questions/SDS.json'
-import {uploadScaleResults} from '@/utils/UploadFile'
-import moment from 'moment'
 
 export default {
   data () {
@@ -91,13 +89,6 @@ export default {
           result += '根据测量结果显示,您为重度抑郁情况，需要特别关注一下哦！\n'
         }
         this.measurementResult = result + resultDes
-        const time = moment().format('YYYY-MM-DD HH:mm:ss')
-        uploadScaleResults('sds', {
-          'options': [this.result],
-          'score': totalScore,
-          'content': this.measurementResult,
-          'createTime': time
-        })
       } else {
         this.$toast('您还有未做完的题目，未作答的题目未被标记红点，请继续作答！')
       }
