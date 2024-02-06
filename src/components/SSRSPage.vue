@@ -55,6 +55,8 @@
 <script>
 import router from '@/router'
 import measurementJson from '@/assets/questions/SSRS.json'
+import {uploadScaleResults} from '@/utils/UploadFile'
+import moment from 'moment'
 
 export default {
   data () {
@@ -166,12 +168,25 @@ export default {
             }
           }
         }
+        const score = {
+          '客观支持程度': resultObjectiveScore,
+          '主观支持程度': resultSubjectiveScore,
+          '支持的利用程度': resultUsageScore
+        }
         let resultDes = '根据您的测量结果，您的总分为：'
         resultDes += resultScore + '。 \n\n'
         resultDes += '您客观支持程度的分数为：' + resultObjectiveScore + '。' + objective.content + '\n\n'
         resultDes += '您主观支持程度的分数为：' + resultSubjectiveScore + '。' + objective.content + '\n\n'
         resultDes += '您对支持的利用程度的分数为：' + resultUsageScore + '。' + objective.content + '\n\n'
         this.measurementResult = resultDes + measurementJson.scaleInfo.ssrs.content
+        const time = moment().format('YYYY-MM-DD HH:mm:ss')
+        uploadScaleResults('ssrs', {
+          'options': [this.result, this.result1],
+          'structureScore': score,
+          'score': resultScore,
+          'content': this.measurementResult,
+          'createTime': time
+        })
       } else {
         this.$toast('您还有未做完的题目，未作答的题目未被标记红点，请继续作答！')
       }

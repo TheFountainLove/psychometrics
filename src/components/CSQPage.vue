@@ -31,6 +31,8 @@
 <script>
 import router from '@/router'
 import measurementJson from '@/assets/questions/CSQ.json'
+import {uploadScaleResults} from '@/utils/UploadFile'
+import moment from 'moment'
 
 export default {
   data () {
@@ -100,6 +102,13 @@ export default {
         })
         problemResult += `\t\t其在生活中主要的应对方式是${clinicResult}。\n\n` + measurementJson.scaleInfo.resultContent
         this.measurementResult = resultScore + result + problemResult
+        const time = moment().format('YYYY-MM-DD HH:mm:ss')
+        uploadScaleResults('csq', {
+          'options': [this.result],
+          'score': scores,
+          'content': this.measurementResult,
+          'createTime': time
+        })
       } else {
         this.$toast('您还有未做完的题目，未作答的题目未被标记红点，请继续作答！')
       }

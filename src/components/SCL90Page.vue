@@ -31,7 +31,8 @@
 <script>
 import router from '@/router'
 import measurementJson from '@/assets/questions/SCL90.json'
-
+import {uploadScaleResults} from '@/utils/UploadFile'
+import moment from 'moment'
 export default {
   data () {
     return {
@@ -74,6 +75,7 @@ export default {
     getResult () {
       if (Object.keys(this.result).length === measurementJson.scale.questions.length) {
         const scores = {}
+        let totalScore = 0
         let resultScore = '10项因子结果如下：\n'
         let result = '根据您的测量结果，最终解释如下：\n\n'
         let problemResult = ''
@@ -87,6 +89,7 @@ export default {
         })
         Object.keys(scores).forEach(item => {
           resultScore += `${item}：${scores[item]} 分\n`
+          totalScore += scores[item]
         })
         const greaterThanOne = []
         for (const key in scores) {
@@ -109,6 +112,14 @@ export default {
         })
         problemResult += `其临床诊断是${clinicResult}症。`
         this.measurementResult = result + resultScore + problemResult
+        const time = moment().format('YYYY-MM-DD HH:mm:ss')
+        uploadScaleResults('scl90', {
+          'options': [this.result],
+          'structureScore': scores,
+          'score': totalScore,
+          'content': this.measurementResult,
+          'createTime': time
+        })
       } else {
         this.$toast('您还有未做完的题目，未作答的题目未被标记红点，请继续作答！')
       }

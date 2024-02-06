@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import axios from 'axios'
 import {Progress, Icon, NavBar, Tab, Tabs, RadioGroup, Radio, Button, Toast, Stepper, Checkbox, CheckboxGroup} from 'vant'
 
 Vue.use(Progress)
@@ -18,6 +19,8 @@ Vue.use(Progress)
   .use(Checkbox)
   .use(CheckboxGroup)
 Vue.config.productionTip = false
+axios.defaults.baseURL = '/api'
+Vue.prototype.$axios = axios
 
 /* eslint-disable no-new */
 new Vue({
